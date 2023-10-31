@@ -1,105 +1,97 @@
-# Backend-Only Personalized Health and Wellness Recommendation System
+# Personalized Health and Wellness Recommendation System
 
-![Project Logo](insert_logo_url_here)
+## Project Overview
 
-Welcome to the Backend-Only Personalized Health and Wellness Recommendation System repository. This innovative project aims to develop a robust backend-only system using microservices, Spring Boot, JPA, API Gateway, Discovery Server, and Authentication Service. The system's primary goal is to provide users with tailored health and wellness recommendations, enable progress tracking, encourage community engagement, offer nutrition information, support mental health, utilize data analytics, and provide feedback analysis.
+Welcome to the Personalized Health and Wellness Recommendation System project. In this innovative endeavor, we aim to develop a robust and comprehensive backend-only system that empowers individuals to make informed decisions about their health and well-being. By utilizing microservices architecture, Spring Boot, JPA, API Gateway, Discovery Server, and an Authentication Service, our platform will provide tailored health and wellness recommendations, facilitate progress tracking, encourage community engagement, offer nutrition information, support mental health, leverage data analytics, and provide feedback analysis.
 
-## Key Features and Components
+### Key Features and Components
 
-### Microservices Architecture
+- **Microservices Architecture:** Our system will employ a microservices architecture to ensure modularity and scalability. Each microservice will address specific aspects of health and wellness recommendations and data management.
 
-The system employs a microservices architecture to ensure modularity and scalability. Each microservice addresses specific aspects of health and wellness recommendations and data management.
+- **Spring Boot:** Spring Boot will serve as the foundational framework for developing microservices, expediting the creation of robust and scalable back-end services.
 
-### Spring Boot
+- **JPA (Java Persistence API):** JPA will facilitate data persistence and interaction with a relational database. Entities representing user profiles, health data, recommendations, feedback, and community interactions will be defined and managed using JPA.
 
-Spring Boot serves as the foundational framework for developing microservices. Its capabilities expedite the creation of robust and scalable backend services.
+- **API Gateway:** An API Gateway will centralize request routing, security, and authentication, ensuring a unified and secure API surface for client interactions.
 
-### JPA (Java Persistence API)
+- **Discovery Server:** The Discovery Server will manage service registration and discovery for microservices, enabling dynamic scaling and load balancing to ensure system reliability.
 
-JPA facilitates data persistence and interaction with a relational database. Entities representing user profiles, health data, recommendations, feedback, and community interactions will be defined and managed using JPA.
+- **Authentication Service:** The Authentication Service will handle user registration, login, and session management. Secure user authentication and access token generation will be implemented.
 
-### API Gateway
+### Key Functionalities and API Samples
 
-An API Gateway centralizes request routing, security, and authentication. It ensures a unified and secure API surface for client interactions.
+Please note that the following are sample functionalities and API endpoints, and you may modify or expand upon them as needed:
 
-### Discovery Server
+1. **UserProfile and Health Data Management:**
+   - `/users/register`: User registration.
+   - `/users/login`: User login.
+   - `/users/profile`: Manage user profile information.
+   - `/users/health-data`: Manage personal health data.
 
-The Discovery Server manages service registration and discovery for microservices. It enables dynamic scaling and load balancing, ensuring system reliability.
+2. **Health and Wellness Recommendations:**
+   - `/recommendations/diet`: Get personalized diet recommendations.
+   - `/recommendations/exercise`: Receive exercise routines.
+   - `/recommendations/mental-health`: Access mental health exercises.
+   - `/recommendations/sleep`: Receive sleep schedule recommendations.
 
-### Authentication Service
+3. **User Feedback and Progress Tracking:**
+   - `/feedback/submit`: Submit feedback on recommendations.
+   - `/progress/track`: Track health and wellness progress.
+   - `/progress/insights`: View insights based on progress data.
 
-The Authentication Service handles user registration, login, and session management. Secure user authentication and access token generation will be implemented.
+4. **Notification Service (Optional):**
+   - `/notifications/preferences`: Configure notification preferences.
+   - `/notifications/send`: Send personalized recommendations via notifications.
 
-## Key Functionalities and API Samples
+5. **Community and Social Integration:**
+   - `/community/groups`: Create or join wellness groups.
+   - `/community/posts`: Share achievements and wellness updates.
+   - `/community/interactions`: Like, comment, and follow other users' posts.
 
-Please note that these are just samples of the functionalities and API endpoints:
+6. **Nutrition Information Service:**
+   - `/nutrition/search`: Search for foods and recipes.
+   - `/nutrition/details`: Retrieve nutritional facts for specific foods.
+   - `/nutrition/recommendations`: Receive dietary recommendations.
 
-### UserProfile and Health Data Management
+7. **Mental Health and Stress Management:**
+   - `/mental-health/exercises`: Access mental health exercises.
+   - `/mental-health/mood-tracking`: Log and track mood data.
+   - `/mental-health/recommendations`: Receive mental health recommendations.
 
-- **User Registration**: `/users/register` - Register a new user.
-- **User Login**: `/users/login` - Log in as a user.
-- **Manage User Profile**: `/users/profile` - Manage user profile information.
-- **Manage Personal Health Data**: `/users/health-data` - Manage personal health data.
+8. **Data Analysis (Optional):**
+   - `/ml/analyze`: Analyze data from the database directly.
+   - `/ml/predictions`: Get personalized predictions and insights.
+   - `/ml/update-recommendations`: Adjust recommendations based on insights.
 
-### Health and Wellness Recommendations
+9. **Feedback Analysis Dashboard:**
+   - `/dashboard/feedback`: View user feedback and satisfaction.
+   - `/dashboard/progress`: Monitor user progress and trends.
+   - `/dashboard/recommendations`: Make data-driven decisions to improve recommendations.
 
-- **Diet Recommendations**: `/recommendations/diet` - Get personalized diet recommendations.
-- **Exercise Recommendations**: `/recommendations/exercise` - Receive exercise routines.
-- **Mental Health Recommendations**: `/recommendations/mental-health` - Access mental health exercises.
-- **Sleep Recommendations**: `/recommendations/sleep` - Receive sleep schedule recommendations.
+### Project Goals
 
-### User Feedback and Progress Tracking
-
-- **Submit Feedback**: `/feedback/submit` - Submit feedback on recommendations.
-- **Track Progress**: `/progress/track` - Track health and wellness progress.
-- **View Insights**: `/progress/insights` - View insights based on progress data.
-
-### Notification Service (Optional)
-
-- **Configure Notification Preferences**: `/notifications/preferences` - Configure notification preferences.
-- **Send Notifications**: `/notifications/send` - Send personalized recommendations via notifications.
-
-### Community and Social Integration
-
-- **Create/Join Wellness Groups**: `/community/groups` - Create or join wellness groups.
-- **Share Achievements and Updates**: `/community/posts` - Share achievements and wellness updates.
-- **Interact with Posts**: `/community/interactions` - Like, comment, and follow other users' posts.
-
-### Nutrition Information Service
-
-- **Search for Foods and Recipes**: `/nutrition/search` - Search for foods and recipes.
-- **Retrieve Nutritional Facts**: `/nutrition/details` - Retrieve nutritional facts for specific foods.
-- **Receive Dietary Recommendations**: `/nutrition/recommendations` - Receive dietary recommendations.
-
-### Mental Health and Stress Management
-
-- **Access Mental Health Exercises**: `/mental-health/exercises` - Access mental health exercises.
-- **Log and Track Mood Data**: `/mental-health/mood-tracking` - Log and track mood data.
-- **Receive Mental Health Recommendations**: `/mental-health/recommendations` - Receive mental health recommendations.
-
-### Data Analysis (Optional)
-
-- **Analyze Data**: `/ml/analyze` - Analyze data from the database directly.
-- **Get Personalized Predictions**: `/ml/predictions` - Get personalized predictions and insights.
-- **Update Recommendations**: `/ml/update-recommendations` - Adjust recommendations based on insights.
-
-### Feedback Analysis Dashboard
-
-- **View User Feedback**: `/dashboard/feedback` - View user feedback and satisfaction.
-- **Monitor User Progress**: `/dashboard/progress` - Monitor user progress and trends.
-- **Make Data-Driven Decisions**: `/dashboard/recommendations` - Make data-driven decisions to improve recommendations.
-
-## Project Goals
-
-1. Develop a comprehensive backend-only system for personalized health and wellness recommendations.
+1. Develop a comprehensive back-end system for personalized health and wellness recommendations.
 2. Ensure data privacy and security through user authentication and secure data handling.
 3. Provide a wide range of features for health tracking, community engagement, and advanced data analysis.
 4. Implement efficient data storage and retrieval using JPA for user profiles, recommendations, and feedback, etc.
 5. Leverage a microservices architecture for modularity, scalability, and maintainability.
 
-## Deliverables and Instructions
+This project aims to empower individuals to take control of their health and wellness by providing tailored recommendations and comprehensive support through innovative technology and data-driven insights.
 
-1. The project is implemented and uploaded on GitHub. You can find the project repository [here](https://github.com/BJITAcademy2021/YSD_B03_MidTerm_DragonWarriors).
-2. For more details about the project, refer to the repository's README file.
+## Getting Started
 
-Feel free to explore the repository and get involved in the project. Your contributions and feedback are highly appreciated!
+1. Clone this repository to your local development environment.
+2. Follow the installation and setup instructions in the respective service directories.
+
+## Contributing
+
+- Fork the repository.
+- Create a new branch for your feature: `git checkout -b feature-name`.
+- Commit your changes: `git commit -m 'Add new feature'`.
+- Push to your branch: `git push origin feature-name`.
+- Submit a pull request.
+
+
+## Contact
+
+For questions or inquiries, please contact (mailto:your.uddinrayhan938@gmail.com).
